@@ -18,12 +18,9 @@ module.exports = async function (context, req) {
 
     return getResponseObject(persons)
   } catch (error) {
-    console.log(error.stack)
-    console.log(error.response?.data || error.stack)
-
-    logger('error', ['lookup', 'err', error.message], context)
+    logger('error', ['lookup', 'err', error.response?.data || error.message], context)
 
     if (error instanceof HTTPError) return error.toJSON()
-    return new HTTPError(500, 'An unknown error occured', error).toJSON()
+    return new HTTPError(500, 'An unknown error occured', error.response?.data || error.stack || error.toString()).toJSON()
   }
 }
