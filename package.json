@@ -1,8 +1,7 @@
 {
   "name": "azf-krr",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "KRR Azure function",
   "scripts": {
     "test": "standard",
     "refresh": "rm -rf node_modules/ && rm package-lock.json && npm i",
@@ -21,11 +20,10 @@
   "author": "Mats Andreassen <matsand@live.no> (https://github.com/matsand)",
   "license": "MIT",
   "dependencies": {
-    "@vtfk/logger": "^6.1.1",
-    "@vtfk/maskinporten-auth": "^2.0.4",
+    "@vtfk/logger": "^6.3.3",
+    "@vtfk/maskinporten-auth": "^2.0.6",
     "axios": "^1.6.1",
     "jsonwebtoken": "^9.0.0",
-    "nanoid": "3.1.32",
     "node-cache": "^5.1.2"
   },
   "devDependencies": {
