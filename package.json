@@ -20,9 +20,9 @@
   "author": "Mats Andreassen <matsand@live.no> (https://github.com/matsand)",
   "license": "MIT",
   "dependencies": {
-    "@vtfk/logger": "^6.3.3",
+    "@vtfk/logger": "^6.4.2",
     "@vtfk/maskinporten-auth": "^2.0.6",
-    "axios": "^1.6.1",
+    "axios": "^1.8.2",
     "jsonwebtoken": "^9.0.0",
     "node-cache": "^5.1.2"
   },
