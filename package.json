@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "KRR Azure function",
   "scripts": {
-    "test": "standard",
+    "test": "standard && node --test \"test/**/*.test.js\"",
     "refresh": "rm -rf node_modules/ && rm package-lock.json && npm i",
     "dev": "func start",
     "deploy:test": "func azure functionapp publish test-func-krr-v1",
